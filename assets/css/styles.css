@@ -1,0 +1,42 @@
+#title {
+  font-size: 10rem;
+  background-image: linear-gradient(45deg, #00f260, #0575e6);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#underline {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  background: linear-gradient(45deg, #00f260, #0575e6) left bottom no-repeat;
+  background-size: 100% 0.5rem;
+}
+
+#social {
+  font-size: 5rem;
+  margin-top: -7.5rem;
+  letter-spacing: 0.4rem;
+}
+
+#social a {
+  color: #00f260;
+}
+
+#social a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+  #title {
+    font-size: 4rem;
+  }
+
+  #social {
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    letter-spacing: 0.2rem;
+  }
+}
