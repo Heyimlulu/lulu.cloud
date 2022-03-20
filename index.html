@@ -5,8 +5,10 @@
     <title>lulu.cloud</title>
     <meta name="description" content="Lulu Cloud">
     <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+    <meta name="keywords" content="lulu cloud, lulu, cloud, social, media, social media">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preload" href="assets/font/AzoSuper.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/font.css" />
@@ -21,14 +23,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lulu.cloud/" />
     <meta property="og:title" content="Lulu Cloud" />
-    <meta property="og:description" content="Lulu Cloud" />
+    <meta property="og:description" content="Social media reference landing page" />
     <meta property="og:image" content="https://lulu.cloud/assets/favicon.png">
 
     <!-- TWITTER CARD -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://lulu.cloud/">
     <meta property="twitter:title" content="Lulu Cloud">
-    <meta property="twitter:description" content="Lulu Cloud">
+    <meta property="twitter:description" content="Social media reference landing page">
     <meta property="twitter:image" content="https://lulu.cloud/assets/favicon.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -89,6 +91,10 @@
     <footer id="copyright"></footer>
 </body>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/copyright.js"></script>
+<script>
+    document.querySelector('#copyright').innerHTML = `Copyright &copy; ${new Date().getFullYear()} Lulu. All Rights Reserved`;
+
+    console.log('%cHello there :)', 'font-size:2rem;font-weight:bold;color:red;');
+</script>
 
 </html>
