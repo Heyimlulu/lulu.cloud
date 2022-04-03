@@ -1,3 +1,43 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.col {
+  flex: 1;
+  padding: 0;
+  margin: 0 2rem;
+}
+
+.col-md-2 {
+  max-width: 20%;
+}
+
+.col-md-10 {
+  max-width: 80%;
+}
+
+.logo {
+  margin-right: 2rem;
+}
+
+.logo > img {
+  border-radius: 50%;
+  outline: #00f260 .5rem solid;
+  outline-offset: .5rem;
+  width: 20rem;
+  height: 20rem;
+  transition: all .5s ease;
+}
+
+.logo > img:hover {
+  transform: scale(1.1);
+}
+
 #title {
   font-size: 10rem;
   background-image: linear-gradient(45deg, #00f260, #0575e6);
@@ -52,7 +92,36 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    flex: 1;
+    margin: 0;
+  }
+
+  .col-md-2 {
+    max-width: 100%;
+  }
+
+  .col-md-10 {
+    max-width: 100%;
+  }
+
+  .logo > img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo > img:hover {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
   #title {
     font-size: 4rem;
   }
