@@ -29,8 +29,8 @@
   border-radius: 50%;
   outline: #00f260 .5rem solid;
   outline-offset: .5rem;
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   transition: all .5s ease;
 }
 
@@ -108,11 +108,12 @@ footer {
 
   .col-md-10 {
     max-width: 100%;
+    text-align: center;
   }
 
   .logo > img {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 1rem;
   }
 
