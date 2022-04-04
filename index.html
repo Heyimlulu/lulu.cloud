@@ -14,6 +14,39 @@
     <link rel="stylesheet" href="assets/css/font.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    // menu: '#menu',
+                    // lockAnchors: false,
+                    // showActiveTooltip: false,
+
+                    // Navigation arrows vertical 
+                    navigation: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
+
+                    // anchors
+                    // anchors: ['home', 'about', 'portfolio', 'contact'],
+                });
+            });
+        })
+    </script>
+
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+        integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"
+        integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -45,62 +78,96 @@
 </head>
 
 <body class="is-preload">
-    <main class="container">
-        <div class="row">
-            <div class="col col-md-2">
-                <div class="logo">
-                    <img src="assets/img/lulu-447x447.png" alt="logo" />
+    <main id="fullpage" class="container">
+        <section id="home" class="section">
+            <div class="row">
+                <div class="col col-md-2">
+                    <div class="logo">
+                        <img src="assets/img/lulu-447x447.png" alt="logo" />
+                    </div>
+                </div>
+                <div class="col col-md-10">
+                    <h1 class="title">
+                        Hello, <br>
+                        <span class="underline">
+                            I'm Lulu
+                        </span>
+                    </h1>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="https://discord.com/users/265896171384340480" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Discord">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://open.spotify.com/user/wt118h2koc880wzp9dntx4l0l?si=b8ebd45a291f43b9"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                                    <i class="fa-brands fa-spotify"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Luludev" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Heyimlulu" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://steamcommunity.com/id/yukibutt/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Steam">
+                                    <i class="fa-brands fa-steam"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:hello@lulu.cloud" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Contact">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col col-md-10">
-                <h1 id="title">
-                    Hello, <br>
-                    <span id="underline">
-                        I'm Lulu
-                    </span>
-                </h1>
-                <div id="social">
-                    <ul>
-                        <li>
-                            <a href="https://discord.com/users/265896171384340480" target="_blank"
-                                rel="noopener noreferrer" aria-label="Discord">
-                                <i class="fa-brands fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://open.spotify.com/user/wt118h2koc880wzp9dntx4l0l?si=b8ebd45a291f43b9"
-                                target="_blank" rel="noopener noreferrer" aria-label="Spotify">
-                                <i class="fa-brands fa-spotify"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/Luludev" target="_blank" rel="noopener noreferrer"
-                                aria-label="Twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Heyimlulu" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://steamcommunity.com/id/yukibutt/" target="_blank" rel="noopener noreferrer"
-                                aria-label="Steam">
-                                <i class="fa-brands fa-steam"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:hello@lulu.cloud" target="_blank" rel="noopener noreferrer"
-                                aria-label="Contact">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        </section>
+        <section id="about" class="section">
+            <h2 class="subtitle">About Me</h2>
+            <div class="paragraph">
+                <p>
+                    My name's Lucas and I'm a self-taught hobbyist developer from Switzerland. I've grown close to
+                    computers
+                    since I'm young and I've been passionate about it.
+                </p>
+                <p>
+                    I've always been interested building something that I'm proud of with code and sharing it with
+                    people,
+                    currently focused in Web Development and UI/UX design.
+                </p>
+                <p>
+                    During my freetime, I like to play some video games (I.E. Forza Horizon 5, Life is Strange series,
+                    ...)
+                    and watch some shows or animes on Netflix.
+                </p>
             </div>
-        </div>
+        </section>
+        <section id="portfolio" class="section">
+            <h2 class="subtitle">Portfolio</h2>
+        </section>
+        <section id="contact" class="section">
+            <h2 class="subtitle">Contact</h2>
+            <div>
+                <p class="paragraph">Feel free to contact me if you have any questions or want to collaborate</p>
+                <a class="social_button" href="mailto:hello@lulu.cloud">Email</a>
+                <a class="social_button" href="https://discord.com/users/265896171384340480" target="_blank"
+                    rel="noopener noreferrer">Email</a>
+            </div>
+        </section>
     </main>
     <footer id="copyright"></footer>
 </body>
