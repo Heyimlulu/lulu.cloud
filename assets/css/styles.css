@@ -106,6 +106,10 @@ ul li {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.icons {
+  margin: 0 .5rem;
+}
+
 .social_button {
   border: none;
   border-radius: 4px;
