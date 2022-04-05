@@ -1,5 +1,17 @@
+body {
+  font-family: "Azo Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .section {
   padding: 0 2rem;
+}
+
+.title, .subtitle {
+  font-family: "Azo Super", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .row {
@@ -108,6 +120,7 @@ ul li {
 
 .icons {
   margin: 0 .5rem;
+  color: #00f260;
 }
 
 .social_button {
@@ -126,6 +139,7 @@ ul li {
   background: rgba(26, 26, 26, 1);
   box-shadow: 0 4px #1e9554;
   margin: 0 .5rem;
+  font-weight: bold;
 }
 
 .social_button:hover {
@@ -147,6 +161,7 @@ footer {
   font-size: 1rem;
   color: #00f260;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Navigation arrows style */
@@ -163,7 +178,7 @@ footer {
 #fp-nav ul li {
   display: inline-block;
   width: auto;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   margin: 0;
   list-style: none;
   text-align: center;
@@ -188,6 +203,12 @@ footer {
     background: #fff !important;
 }
 
+#fp-nav ul li .fp-tooltip.fp-right {
+  top: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -222,15 +243,21 @@ footer {
   #contact {
     text-align: center;
   }
-}
 
-@media only screen and (max-width: 768px) {
+  #fp-nav ul li .fp-tooltip.fp-right {
+    font-size: .8rem;
+  }
+
   .title {
     font-size: 4rem;
   }
 
   .subtitle {
     font-size: 3rem;
+  }
+
+  #about .paragraph {
+    font-size: 1rem;
   }
 
   .paragraph {
