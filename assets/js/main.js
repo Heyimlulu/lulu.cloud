@@ -36,14 +36,14 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'https://i.imgur.com/Y2Fvvyg.jpg': 'center',
-							'https://i.imgur.com/DBOo8hO.jpg': 'center',
-							'https://i.imgur.com/NkMbYJU.jpg': 'center',
-							'https://i.imgur.com/5I9ii5t.jpg': 'center',
-							'https://i.imgur.com/RvfVJkU.jpg': 'center',
-							'https://i.imgur.com/uRVfFw6.jpg': 'center',
-							'https://i.imgur.com/NS7Xq0P.jpg': 'center',
-							'https://i.imgur.com/kH9Zfjm.jpg': 'center'
+							'https://i.imgur.com/Y2Fvvyg.webp': 'center',
+							'https://i.imgur.com/DBOo8hO.webp': 'center',
+							'https://i.imgur.com/NkMbYJU.webp': 'center',
+							'https://i.imgur.com/5I9ii5t.webp': 'center',
+							'https://i.imgur.com/RvfVJkU.webp': 'center',
+							'https://i.imgur.com/uRVfFw6.webp': 'center',
+							'https://i.imgur.com/NS7Xq0P.webp': 'center',
+							'https://i.imgur.com/kH9Zfjm.webp': 'center'
 						},
 
 					// Delay.
