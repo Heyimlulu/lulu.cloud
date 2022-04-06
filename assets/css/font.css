@@ -20,6 +20,7 @@
       url('../font/AzoSans/AzoSans-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +33,7 @@
       url('../font/AzoSans/AzoSans-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +46,7 @@
       url('../font/AzoSans/AzoSans-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,6 +59,7 @@
       url('../font/AzoSans/AzoSans-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -68,6 +72,7 @@
       url('../font/AzoSans/AzoSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -80,6 +85,7 @@
       url('../font/AzoSans/AzoSans-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -92,6 +98,7 @@
       url('../font/AzoSans/AzoSans-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -104,6 +111,7 @@
       url('../font/AzoSans/AzoSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -116,6 +124,7 @@
       url('../font/AzoSans/AzoSans-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -128,6 +137,7 @@
       url('../font/AzoSans/AzoSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -140,6 +150,7 @@
       url('../font/AzoSans/AzoSans-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -152,4 +163,5 @@
       url('../font/AzoSans/AzoSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
