@@ -169,7 +169,6 @@ footer {
 }
 
 /* Navigation arrows style */
-
 #fp-nav ul {
   display: block;
   width: 100%;
@@ -212,10 +211,13 @@ footer {
   -moz-text-fill-color: transparent;
 }
 
+/* Navigation tooltip text */
 #fp-nav ul li .fp-tooltip.fp-right {
-  top: 5px;
+  font-family: "Azo Super";
+  font-weight: 900;
+  top: .25rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: .1rem;
   background-image: linear-gradient(45deg, #00f260, #0575e6) !important;
 
@@ -226,7 +228,7 @@ footer {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .row {
     flex-direction: column;
   }
@@ -243,6 +245,10 @@ footer {
   .col-md-10 {
     max-width: 100%;
     text-align: center;
+  }
+
+  .logo {
+    margin-right: 0;
   }
 
   .logo > img {
@@ -290,28 +296,15 @@ footer {
   }
 
   /* Navigation arrows style */
-  #fp-nav {
-    display: block;
-    width: 100%;
-    top: 2.5rem !important;
-  }
-
   #fp-nav.fp-right {
-    right: 0 !important;
-  }
-
-  #fp-nav ul {
-    display: flex;
-    justify-content: center;
+    right: .35rem !important;
   }
 
   #fp-nav ul li {
-    padding: 0 1.2rem;
+    padding: 1.2rem 0;
   }
 
   #fp-nav ul li .fp-tooltip.fp-right {
-    font-size: 1rem;
-    top: 2rem;
-    right: -1rem !important;
+    display: none;
   }
 }
