@@ -91,6 +91,10 @@ body {
   background-size: 100% 0.5rem;
 }
 
+strong {
+  color: #00f260;
+}
+
 ul {
   display: inline-flex;
   list-style: none;
