@@ -37,10 +37,6 @@ body {
   max-width: 80%;
 }
 
-.logo {
-  margin-right: 2rem;
-}
-
 .logo > img {
   border-radius: 50%;
   outline: #00f260 .5rem solid;
@@ -245,10 +241,6 @@ footer {
   .col-md-10 {
     max-width: 100%;
     text-align: center;
-  }
-
-  .logo {
-    margin-right: 0;
   }
 
   .logo > img {
