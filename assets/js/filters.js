@@ -6,9 +6,9 @@ $(document).ready(function () {
         var filter = $(this).attr('data-filter');
         $('.portfolio-items .item').each(function () {
             if ($(this).hasClass(filter.split('.')[1]) || filter == '*') {
-                $(this).fadeIn(200);
+                $(this).show();
             } else {
-                $(this).fadeOut(200);
+                $(this).hide();
             }
         });
     });
