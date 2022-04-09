@@ -243,6 +243,11 @@ footer {
   color: #0575e6;
 }
 
+.arrows {
+  display: none;
+  color: #00f260;
+}
+
 .portfolio-items {
   display: flex;
   flex-direction: row;
@@ -415,12 +420,71 @@ footer {
   }
 
   .portfolio-items {
-    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .arrow-left {
+    position: absolute;
+    left: 0;
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: 0;
+  }
+
+  @keyframes arrow-right {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(.5rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes arrow-left {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-.5rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .arrow-left {
+    animation: arrow-left 1s infinite;
+  }
+
+  .arrow-right {
+    animation: arrow-right 1s infinite;
   }
 
   .item {
-    width: 100%;
+    width: 300px;
     height: auto;
+    flex-shrink: 0;
+    /* background: none; */
+    /* backdrop-filter: blur(10px); */
+  }
+
+  .web, .discord {
+    box-shadow: none;
   }
 
   .item:hover {
