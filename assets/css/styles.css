@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #c471ed;
+  --secondary-color: #12c2e9;
+}
+
 /* make scrollbar invisible */
 ::-webkit-scrollbar {
     width: 0px;
@@ -8,6 +13,12 @@ body {
   font-family: "Azo Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
+  /* Schesaplana Mountain in Suisse/Austria by Marius Partl */
+  /* https://unsplash.com/photos/0HfVIkoXZhg */
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/background.webp'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -77,20 +88,20 @@ body {
 
 .logo > img {
   border-radius: 50%;
-  outline: #00f260 .5rem solid;
+  outline: var(--primary-color) .5rem solid;
   outline-offset: .5rem;
   /* outline for mozilla and safari browser */
   -moz-outline-radius: 50%;
   -moz-outline-offset: .5rem;
   -moz-outline-style: solid;
   -moz-outline-width: .5rem;
-  -moz-outline-color: #00f260;
+  -moz-outline-color: var(--primary-color);
   /* outline for chrome browser */
   -webkit-outline-radius: 50%;
   -webkit-outline-offset: .5rem;
   -webkit-outline-style: solid;
   -webkit-outline-width: .5rem;
-  -webkit-outline-color: #00f260;
+  -webkit-outline-color: var(--primary-color);
   width: 15rem;
   height: 15rem;
   transition: all .5s ease;
@@ -102,7 +113,7 @@ body {
 
 .title {
   font-size: 10rem;
-  background-image: linear-gradient(45deg, #00f260, #0575e6);
+  background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,7 +126,7 @@ body {
   font-weight: 300;
   margin-bottom: 2rem;
 
-  background-image: linear-gradient(45deg, #00f260, #0575e6);
+  background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -138,12 +149,12 @@ body {
 .underline {
   text-align: center;
   padding-bottom: 0.5rem;
-  background: linear-gradient(45deg, #00f260, #0575e6) left bottom no-repeat;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) left bottom no-repeat;
   background-size: 100% 0.5rem;
 }
 
 strong {
-  color: #00f260;
+  color: var(--secondary-color);
 }
 
 ul {
@@ -164,17 +175,17 @@ ul li {
 }
 
 .social a {
-  color: #00f260;
+  color: var(--secondary-color);
   margin: 0 .35rem;
 }
 
 .social a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--primary-color);
 }
 
 .icons {
   margin: 0 .5rem;
-  color: #00f260;
+  color: var(--secondary-color);
 }
 
 #contact {
@@ -187,7 +198,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 1rem;
-  color: #00f260;
+  color: var(--secondary-color);
   text-align: center;
   font-weight: bold;
   backdrop-filter: blur(5px);
@@ -212,13 +223,13 @@ footer {
   justify-content: center;
   align-items: center;
   background: rgba(26, 26, 26, 1);
-  box-shadow: 0 4px #1e9554;
+  box-shadow: 0 4px var(--secondary-color);
   margin: 0 .5rem;
   font-weight: bold;
 }
 
 .social_button:hover {
-  box-shadow: 0 2px #1e9554;
+  box-shadow: 0 2px var(--secondary-color);
   color: rgba(255, 255, 255, .6);
   top: 2px;
 }
@@ -254,7 +265,7 @@ footer {
   margin: 0 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00f260;
+  color: var(--secondary-color);
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -262,12 +273,12 @@ footer {
 }
 
 .filters ul li:hover {
-  color: #0575e6;
+  color: var(--primary-color);
 }
 
 .arrows {
   display: none;
-  color: #00f260;
+  color: var(--secondary-color);
 }
 
 .portfolio-items {
@@ -332,7 +343,7 @@ footer {
 .item-link {
   font-size: 1rem;
   font-weight: 300;
-  color: #00f260;
+  color: var(--secondary-color);
   text-decoration: none;
   text-transform: uppercase;
   transition: all .5s ease;
@@ -340,13 +351,13 @@ footer {
 }
 
 .item-link:hover {
-  color: #0575e6;
+  color: var(--primary-color);
 }
 
 .web, .discord {
   /* backdrop-filter: blur(5px); */
   background: #262626;
-  box-shadow: 0 4px #1e9554;
+  box-shadow: 0 4px var(--secondary-color);
   color: #fff;
   border-radius: 2rem;
   padding: 1rem;
@@ -426,19 +437,6 @@ footer {
 
   footer {
     font-size: 0.7rem;
-  }
-
-  /* Navigation arrows style */
-  #fp-nav.fp-right {
-    right: .35rem !important;
-  }
-
-  #fp-nav ul li {
-    padding: 1.2rem 0;
-  }
-
-  #fp-nav ul li .fp-tooltip.fp-right {
-    display: none;
   }
 
   .portfolio-items {

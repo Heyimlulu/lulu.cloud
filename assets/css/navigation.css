@@ -1,60 +1,79 @@
+:root {
+  --primary-color: #c471ed;
+  --secondary-color: #12c2e9;
+}
+
 /*=================================================================*/
 /*                       Custom arrows style                       */
 /*=================================================================*/
 #fp-nav ul {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-  }
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
   
+#fp-nav ul li {
+  display: inline-block;
+  width: auto;
+  padding: 1.2rem 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#fp-nav ul li a {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* Navigation tooltip text */
+#fp-nav ul li .fp-tooltip.fp-right {
+  font-family: "Azo Super";
+  font-weight: 900;
+  top: .25rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  #fp-nav.fp-right {
+    right: .35rem !important;
+  }
+
   #fp-nav ul li {
-    display: inline-block;
-    width: auto;
     padding: 1.2rem 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
   }
-  
-  #fp-nav ul li a {
-    display: inline-block;
-    width: auto;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-decoration: none;
-    transition: all .5s ease;
-  }
-  
-  #fp-nav ul li a span,
-  .fp-slidesNav ul li a span {
-    background-image: linear-gradient(45deg, #00f260, #0575e6) !important;
-  
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-  
-  /* Navigation tooltip text */
+
   #fp-nav ul li .fp-tooltip.fp-right {
-    font-family: "Azo Super";
-    font-weight: 900;
-    top: .25rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    background-image: linear-gradient(45deg, #00f260, #0575e6) !important;
-  
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    display: none;
   }
+}
