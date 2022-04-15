@@ -34,6 +34,16 @@ body {
   font-style: normal;
 }
 
+.line {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes t{
+  90%,100% {width:100%}
+}
+
 .row {
   display: flex;
   flex-direction: row;
