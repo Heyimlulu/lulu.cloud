@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #c471ed;
+  --secondary-color: #12c2e9;
+}
+
 .infinity {
     width: 120px;
     height: 60px;
@@ -21,7 +26,7 @@
     width: 16px;
     height: 16px;
     display: block;
-    background: #00f260;
+    background: var(--primary-color);
     box-shadow: 2px 2px 8px rgba(255, 76, 96, 0.09);
     border-radius: 50%;
     transform: rotate(90deg);
@@ -107,10 +112,10 @@
       offset-distance: 0%;
     }
     25% {
-      background: #0575e6;
+      background: var(--secondary-color);
     }
     75% {
-      background: #00f260;
+      background: var(--primary-color);
     }
     100% {
       offset-distance: 100%;
@@ -130,10 +135,10 @@
       left: -8px;
     }
     25% {
-      background: #00f260;
+      background: var(--primary-color);
     }
     75% {
-      background: #0575e6;
+      background: var(--secondary-color);
     }
     50.0001%, 100% {
       left: auto;
@@ -154,7 +159,7 @@
     }
   }
   #preloader {
-    background: #262626;
+    background: #161616;
     height: 100%;
     position: fixed;
     width: 100%;
