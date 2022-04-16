@@ -88,8 +88,8 @@ body {
 
 .logo > img {
   border-radius: 50%;
-  outline: var(--primary-color) .5rem solid;
-  outline-offset: .5rem;
+  border: var(--primary-color) .5rem solid;
+  padding: .5rem;
   width: 15rem;
   height: 15rem;
   transition: all .5s ease;
