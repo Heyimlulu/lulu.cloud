@@ -90,18 +90,6 @@ body {
   border-radius: 50%;
   outline: var(--primary-color) .5rem solid;
   outline-offset: .5rem;
-  /* outline for mozilla and safari browser */
-  -moz-outline-radius: 50%;
-  -moz-outline-offset: .5rem;
-  -moz-outline-style: solid;
-  -moz-outline-width: .5rem;
-  -moz-outline-color: var(--primary-color);
-  /* outline for chrome browser */
-  -webkit-outline-radius: 50%;
-  -webkit-outline-offset: .5rem;
-  -webkit-outline-style: solid;
-  -webkit-outline-width: .5rem;
-  -webkit-outline-color: var(--primary-color);
   width: 15rem;
   height: 15rem;
   transition: all .5s ease;
