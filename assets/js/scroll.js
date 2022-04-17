@@ -2,6 +2,18 @@ $(document).ready(function () {
     // Get all sections that have an ID defined
     let sections = $('section[id]');
 
+    $(document).on('click', 'a[href^="#"]', function (e) {
+        e.preventDefault();
+
+        let target = $(this).attr('href');
+        let $target = $(target);
+        console.log($target);
+
+        $('html, body').animate({
+            scrollTop: $target.offset().top
+        }, 1000);
+    });
+
     // Add an event listener listening for scroll
     $('body').scroll(function (e) {
         // Get current scroll position
